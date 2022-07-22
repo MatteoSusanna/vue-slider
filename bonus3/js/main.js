@@ -55,7 +55,7 @@ var app = new Vue({
             this.avanti()
         },
         
-        play(){
+        mouseLeaveplay(){
             this.timer = setInterval(this.autoPlay,1000);  
         },
 

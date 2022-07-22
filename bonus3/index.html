@@ -34,7 +34,7 @@
                             <div class="my-carousel-images">
                                 
                                 <div class="my-carousel-item active">
-                                    <img @mouseover="resetPlay" @mouseleave="play" class="img-fluid" v-bind:src="images[counter].url">
+                                    <img @mouseover="resetPlay" @mouseleave="mouseLeaveplay" class="img-fluid" v-bind:src="images[counter].url">
                                     <div class="item-description px-3">
                                         <h2>{{images[counter].title}}</h2>
                                         <p>{{images[counter].description}}</p>
