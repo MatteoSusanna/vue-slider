@@ -30,7 +30,13 @@
                     </div>
     
                     <div class="col-12 p-5">
-                        <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel">
+                        <div class="my-carousel-container d-flex flex-column px-5" id="my-carousel" 
+
+                        @keyup.right="avanti" 
+                        @keyup.left="indietro" 
+                        
+                        tabindex="0">
+
                             <div class="my-carousel-images">
                                 
                                 <div class="my-carousel-item active">
@@ -50,7 +56,7 @@
                                 </div>    
     
                                 <!-- prev -->
-                                <div @click="indietro" class="my-previous position-absolute">
+                                <div v-on:keyup.left="indietro" @click="indietro" class="my-previous position-absolute">
                                     <span class="my-prev-hook"></span>
                                 </div>
                                 <!-- immagini interne -->
